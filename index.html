@@ -1,0 +1,140 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Instant App</title>
+  <meta name="description" content="Find anything, anytime, anywhere.">
+  <meta name="author" content="Instant Team">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="assets/css/desktop.css">
+
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
+  <script src="assets/js/scrollmagic.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/ScrollToPlugin.min.js"></script>
+  <script src="assets/js/jquery.shuffleLetters.js"></script>
+</head>
+
+<body>
+  <video autoplay loop poster="assets/img/bg-video.png" id="bgvid">
+    <source src="assets/video/teaser.webm" type="video/webm">
+    <source src="assets/video/teaser.mp4" type="video/mp4">
+  </video>
+  <div id="main">
+    <nav class="navbar navbar-default navbar-fixed-top nav-instant">
+      <div id="mySidenav" class="sidenav anchor-nav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#section-1" id="anchor1">Home<br>01</a>
+        <a href="#section-2" id="anchor2">Collect<br>02</a>
+        <a href="#section-3" id="anchor3">Find<br>03</a>
+        <a href="#section-4" id="anchor4">Share<br>04</a>
+        <a href="#section-5" id="anchor5">Anywhere<br>05</a>
+        <a href="#section-6" id="anchor6">The Team<br>06</a>
+        <a href="#section-7" id="anchor7">Our Story<br>07</a>
+        <a href="#section-8" id="anchor8">Contact<br>08</a>
+      </div>
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img alt="" src="assets/img/icons/icon-menu.png">
+          </a>
+          <a class="navbar-brand" href="#" style="color:white">INSTANT</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a class="btn btn-default btn-instant" href="#" role="button">Get Started</a></li>
+            <li class="dropdown">
+              <a href="#showside" onclick="openNav()"><img alt="" src="assets/img/icons/icon-menu.png" width="30"></a>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div>
+    </nav>
+    <div class="container full-screen">
+      <section class="full-screen" id="section-1">
+        <div class="row">
+          <div class="col-md-5 col-md-offset-1" style="margin-top:20%">
+            <h1 class="video-hide" style="font-size:58px;color:white;">Find your...</h1>
+            <p id="container" class="video-hide" style="font-size:40px;color:white;">--- Holidays photos</p>
+            <p><a style="background-color:white;color: black; border-color:white;border-radius:0px" class="btn btn-primary btn-lg video-hide" id="vidpause" href="#" role="button">Watch the trailer</a></p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="container full-screen">
+      <section class="full-screen" id="section-2">
+        <div class="row">
+          <div class="col-md-6 orange">
+            <p>Section Dos</p>
+          </div>
+          <div class="col-md-6 blue">
+            <p>Section Dos</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="container full-screen">
+      <section class="full-screen red" id="section-3">
+        <div>
+          <p>Section Tres</p>
+        </div>
+      </section>
+    </div>
+    <div class="container full-screen">
+      <section class="full-screen blue" id="section-4">
+        <div>
+          <p>Section Cuatro</p>
+        </div>
+      </section>
+    </div>
+    <div class="container full-screen">
+      <section class="full-screen blue" id="section-5">
+        <div>
+          <p>Section Cuatro</p>
+        </div>
+      </section>
+    </div>
+    <div class="container full-screen">
+      <section class="full-screen blue" id="section-6">
+        <div>
+          <p>Section Cuatro</p>
+        </div>
+      </section>
+    </div>
+    <div class="container full-screen">
+      <section class="full-screen blue" id="section-7">
+        <div>
+          <p>Section Cuatro</p>
+        </div>
+      </section>
+    </div>
+    <div class="container full-screen">
+      <section class="full-screen blue" id="section-8">
+        <div>
+          <p>Section Cuatro</p>
+        </div>
+      </section>
+    </div>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/video_fullscreen.js"></script>
+  </div>
+</body>
+</html>

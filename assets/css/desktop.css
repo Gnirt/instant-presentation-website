@@ -1,0 +1,113 @@
+@font-face {
+  font-family: "Avenir";
+  src: "../font/Avenir.ttc";
+}
+body {
+  background-color: #F3F7F9;
+  min-height:100%; padding:0; margin:0;
+  font-family: "Avenir", serif;
+}
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    right: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 65px;
+    font-size: 50px !important;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-right .5s;
+  padding:0; position:absolute; top:0; bottom:0; left:0; right:0;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+.nav-instant {
+  background-color: transparent;
+  border-color: transparent;
+}
+.btn.btn-default.btn-instant {
+  border-radius: 90px;
+  padding: 5px 20px;
+  margin-top: 10px;
+  background-color: transparent;
+  border-color: white;
+  color: white;
+}
+.btn.btn-default.btn-instant.color-blue {
+  border-color: #82B5F2;
+  color: #75ADF2;
+}
+.btn.btn-default.btn-instant:hover {
+  color: white;
+}
+video#bgvid {
+    /*top: 50%;
+    left: 50%;*/
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    position: absolute;
+    top: -40px;
+    /*-ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);*/
+    transition: 1s opacity;
+}
+#bgvid:-webkit-full-screen  {
+  width: 100%;
+  height: 100%;
+}
+.stopfade { opacity: .5; }
+
+.full-screen {
+  min-height:100%;
+}
+
+.blue {
+	background-color: #3883d8;
+}
+.red {
+	background-color: #cf3535;
+}
+.orange {
+	background-color: #ea6300;
+}
