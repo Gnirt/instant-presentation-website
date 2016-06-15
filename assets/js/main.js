@@ -49,6 +49,9 @@ var scenes = {
   },
   'section-8': {
     'section-8': 'anchor8'
+  },
+  'section-9': {
+    'section-9': 'anchor9'
   }
 };
 
@@ -102,6 +105,7 @@ anchor_nav.addEventListener('click', function(e) {
       }
     }
   }
+  closeNav();
 });
 
 var container = $("#container");

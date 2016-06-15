@@ -39,9 +39,10 @@
         <a href="#section-3" id="anchor3">Find<br>03</a>
         <a href="#section-4" id="anchor4">Share<br>04</a>
         <a href="#section-5" id="anchor5">Anywhere<br>05</a>
-        <a href="#section-6" id="anchor6">The Team<br>06</a>
-        <a href="#section-7" id="anchor7">Our Story<br>07</a>
-        <a href="#section-8" id="anchor8">Contact<br>08</a>
+        <a href="#section-6" id="anchor6">Print it<br>06</a>
+        <a href="#section-7" id="anchor7">Demo<br>07</a>
+        <a href="#section-8" id="anchor8">About<br>08</a>
+        <a href="#section-9" id="anchor9">Contact<br>09</a>
       </div>
       <div class="container">
         <div class="navbar-header">
@@ -52,15 +53,23 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="#">
-            <img alt="" src="assets/img/icons/icon-menu.png">
+            <img alt="" src="assets/img/instant-logo.png" width="120">
           </a>
-          <a class="navbar-brand" href="#" style="color:white">INSTANT</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a class="btn btn-default btn-instant" href="#" role="button">Get Started</a></li>
+          <ul class="nav navbar-nav navbar-right margin-top-10">
+            <li><a id="open-popup" class="btn btn-default btn-instant" href="#" role="button">Get Started</a></li>
+            <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+
+            <script>
+              function showMailingPopUp() {
+                  require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us10.list-manage.com","uuid":"b924c1e95a5d7081fe0507254","lid":"d034bcfea7"}) })
+                  document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+              };
+              document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
+            </script>
             <li class="dropdown">
               <a href="#showside" onclick="openNav()"><img alt="" src="assets/img/icons/icon-menu.png" width="30"></a>
             </li>
@@ -82,54 +91,146 @@
     <div class="container full-screen">
       <section class="full-screen" id="section-2">
         <div class="row">
-          <div class="col-md-6 orange">
-            <p>Section Dos</p>
+          <div class="col-md-6 align-middle align-right">
+            <h1 class="title-one-blue">Bring your photo together,
+without noticing it!</h1>
+            <p class="margin-top-40"><b>All your photo in one place without bothering you.</b><br>
+With Instant, you can save, store and collect automatically<br> your pictures from your phone, desktop and from all your<br> devices but also from all your social network.</p>
           </div>
-          <div class="col-md-6 blue">
-            <p>Section Dos</p>
+          <div class="col-md-6 align-middle">
+            <img src="assets/img/collect.png" alt="" width="500px" />
           </div>
         </div>
       </section>
     </div>
     <div class="container full-screen">
-      <section class="full-screen red" id="section-3">
-        <div>
-          <p>Section Tres</p>
+      <section class="full-screen" id="section-3">
+        <div class="row">
+          <div class="col-md-6 align-middle align-right">
+            <img src="assets/img/find.png" alt="" width="500px" />
+          </div>
+          <div class="col-md-6 align-middle">
+            <h1 class="title-one-blue">Get your photo
+back easily !</h1>
+            <p class="margin-top-40"><b>Instant parse / analyse each photo to help you find a photo<br> in your archives.</b>
+You are looking for a specific photo of your kitten ?<br> Just write
+« cat » or else as the location / the place <br> or the time of the shooting. <br>Forget manual sorting and start entering a tag as a place,<br> an object or even an emotion !</p>
+          </div>
         </div>
       </section>
     </div>
     <div class="container full-screen">
-      <section class="full-screen blue" id="section-4">
-        <div>
-          <p>Section Cuatro</p>
+      <section class="full-screen" id="section-4">
+        <div class="row">
+          <div class="col-md-6 align-middle align-right">
+            <h1 class="title-one-blue">Share them instantly.</h1>
+            <p class="margin-top-40"><b>Now that you can get your photo easily, you can also<br> share them simply and quickly ! </b>
+With the Instant shared <br>albums function, send your best moments to your <br> friends ou family by / through / via Facebook,<br> Instagram, Whatsapp, Twitter or even by email.</p>
+          </div>
+          <div class="col-md-6 align-middle">
+            <img src="assets/img/share.png" alt="" width="500px" />
+          </div>
         </div>
       </section>
     </div>
     <div class="container full-screen">
-      <section class="full-screen blue" id="section-5">
-        <div>
-          <p>Section Cuatro</p>
+      <section class="full-screen" id="section-5">
+        <div class="row">
+          <div class="col-md-6 align-middle">
+            <img src="assets/img/anywhere.png" alt="" width="500px" />
+          </div>
+          <div class="col-md-6 align-middle">
+            <h1 class="title-one-blue">All your moments.
+One app.</h1>
+            <p class="margin-top-40"><b>Instant is a multi device app available on <br> desktop, iPad, mobile and the Web.</b> Thanks to our <br>cloud service, you can access to your photo at <br> anytime from anywhere.
+</p>
+          </div>
         </div>
       </section>
     </div>
     <div class="container full-screen">
-      <section class="full-screen blue" id="section-6">
-        <div>
-          <p>Section Cuatro</p>
+      <section class="full-screen" id="section-6">
+        <div class="row">
+          <div class="col-md-6 align-middle align-right">
+            <h1 class="title-one-blue">Bring life to your photos.</h1>
+            <p class="margin-top-40"><b>We team up with <a href="https://www.cheerz.com/" target="_blank">Cheerz</a>!</b><br>
+So that you can print your instants in one click and enjoy <br>delightful moments in your hands</p>
+<a href="https://www.cheerz.com/" target="_blank">
+<svg class="margin-top-40" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 123.5599 46.6047" enable-background="new 0 0 123.5599 46.6047" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" width="200px"><path fill="#372E50" d="M9.9035,46.4272c-5.3935,0.8926-9.9682-1.5703-9.9028-7.6445l0.1831-17.127c0.064-6.0723,4.71-10.0137,10.1035-10.9062c5.3936-0.8912,10.0156,1.4707,9.9502,7.5918l-0.0142,1.1855c-0.0083,0.9492-0.8017,1.8848-1.7705,2.0449l-3.8256,0.6309c-0.9678,0.1621-1.7432-0.5156-1.732-1.4649l0.0108-1.1836c0.018-1.6152-1.1646-2.791-2.687-2.541c-1.5206,0.252-2.7344,1.8242-2.751,3.4395L7.2844,37.5795c-0.0166,1.6114,1.165,2.791,2.6885,2.5391c1.521-0.252,2.7329-1.8262,2.75-3.4395l0.0219-1.9453c0.0113-0.9961,0.8037-1.9316,1.771-2.0918l3.8257-0.6328c0.9673-0.1601,1.7432,0.5176,1.7319,1.5137l-0.0195,1.9453C19.987,41.5873,15.2971,45.5366,9.9035,46.4272z"></path><path fill="#372E50" d="M41.7253,40.1733l-3.8726,0.6406c-0.9672,0.1602-1.7431-0.5176-1.7319-1.5137l0.1304-12.2422l-5.4395,0.9004l-0.1318,12.2403c-0.0112,0.998-0.8037,1.9336-1.771,2.0937l-3.8257,0.6309c-0.9687,0.1601-1.7432-0.5156-1.7319-1.5117l0.3213-30.0313c0.0097-0.9985,0.8017-1.9341,1.771-2.0942l3.8266-0.6328c0.9678-0.1592,1.7432,0.5175,1.732,1.5136L30.884,21.1752l5.4394-0.9004l0.1182-11.0063c0.0098-0.9971,0.8023-1.9326,1.771-2.0918l3.873-0.6416c0.9214-0.1514,1.6973,0.5244,1.6861,1.5225l-0.3223,30.0317C43.4397,39.0854,42.6472,40.0209,41.7253,40.1733z"></path><g class="letter-first"><path fill="#7FD1D2" d="M63.924,30.5073l-14.6474,2.4218l-0.0113-0.0039c-0.0195,0.002-0.0376,0.0118-0.0556,0.0157L49.196,32.937v0.0039h0.0122c-0.895,0.1777-1.6108,1.0371-1.6221,1.9668L47.55,38.2748c-0.0083,0.9493,0.7202,1.586,1.6416,1.4356l14.6475-2.4219l0.0127,0.002c0.019-0.002,0.0376-0.0098,0.0542-0.0137l0.0136,0.0039v-0.0039h-0.0112c0.894-0.1797,1.6113-1.0371,1.6211-1.9668l0.0361-3.3672C65.5754,30.9916,64.8469,30.3549,63.924,30.5073z"></path><path fill="#7FD1D2" d="M64.156,2.5761L49.51,4.998l-0.0127-0.0049c-0.0191,0.0039-0.0371,0.0117-0.0567,0.0156l-0.0112-0.0039v0.0059l0.0112-0.002c-0.8955,0.1797-1.6128,1.0391-1.6211,1.9668l-0.0361,3.3701c-0.0112,0.9488,0.7188,1.5855,1.6406,1.4332l14.647-2.4205l0.0127,0.003c0.0195-0.003,0.0361-0.0108,0.0557-0.0147l0.0112,0.0039V9.3447l-0.0112,0.0019c0.895-0.1797,1.6118-1.039,1.6215-1.9678l0.0372-3.3691C65.8078,3.0615,65.0788,2.4247,64.156,2.5761z"></path><path fill="#7FD1D2" d="M62.6936,16.2768L49.3708,18.478l-0.0122-0.0039c-0.0195,0.0039-0.0376,0.0117-0.0557,0.0156l-0.0127-0.0039v0.0058l0.0113-0.0019c-0.895,0.1777-1.6114,1.0391-1.6206,1.9668l-0.042,3.8242c-0.0098,0.9492,0.7202,1.5859,1.6416,1.4336l13.3242-2.2031l0.0112,0.0039c0.0196-0.002,0.0362-0.0098,0.0557-0.0156l0.0122,0.0058v-0.0058h-0.0112c0.8955-0.1778,1.6113-1.0372,1.6225-1.9668l0.0401-3.8223C64.3449,16.7612,63.6169,16.1245,62.6936,16.2768z"></path></g><g class="letter-second"><path fill="#FFD33B" d="M74.5988,35.4897l-14.6465,2.4219l-0.0126-0.0039c-0.0191,0.0039-0.0372,0.0117-0.0567,0.0156l-0.0112-0.0039v0.0058l0.0112-0.0019c-0.8955,0.1777-1.6113,1.039-1.6211,1.9668l-0.0361,3.3691c-0.0112,0.9492,0.7187,1.586,1.6406,1.4336l14.6465-2.4199l0.0137,0.0019c0.0195-0.0019,0.0351-0.0097,0.0547-0.0136l0.0136,0.0039v-0.0059l-0.0136,0.002c0.8955-0.1797,1.6132-1.0391,1.623-1.9688l0.0352-3.3672C76.2492,35.976,75.5207,35.3373,74.5988,35.4897z"></path><path fill="#FFD33B" d="M74.8371,7.5576l-14.647,2.4209l-0.0127-0.0039c-0.0195,0.0039-0.0361,0.0107-0.0556,0.0146l-0.0108-0.002v0.004l0.0108-0.002c-0.895,0.1777-1.6123,1.0396-1.6221,1.9692l-0.0361,3.3672c-0.0098,0.9492,0.7187,1.5879,1.6416,1.4336l14.6479-2.4219l0.0117,0.004c0.0196-0.004,0.0372-0.0098,0.0547-0.0137l0.0118,0.0019v-0.0039l-0.0098,0.002c0.8945-0.1778,1.6103-1.041,1.6201-1.9688l0.0381-3.3676C76.4895,8.0419,75.759,7.4042,74.8371,7.5576z"></path><path fill="#FFD33B" d="M73.4133,21.7202L60.09,23.9213l-0.0127-0.0019c-0.0195,0.0019-0.0361,0.0097-0.0556,0.0136l-0.0108-0.0039v0.0059l0.0108-0.002c-0.895,0.1797-1.6123,1.0391-1.6221,1.9688l-0.0405,3.8223c-0.0108,0.9492,0.7187,1.5859,1.6406,1.4336l13.3237-2.2032l0.0127,0.0039c0.0186-0.0039,0.0362-0.0097,0.0557-0.0136l0.0117,0.0019v-0.0058l-0.0117,0.0039c0.8945-0.1797,1.6113-1.041,1.6221-1.9688l0.04-3.8242C75.0637,22.2026,74.3352,21.5659,73.4133,21.7202z"></path></g><path fill="#372E50" d="M97.7356,37.5834l-4.0118,0.6621c-0.9687,0.1602-1.6972-0.5234-1.6875-1.5195l0.1094-10.0586c0.0117-1.2344-0.5332-1.8066-1.5019-1.6465l-3.7793,0.625l-0.128,11.9551c-0.0107,0.9961-0.8037,1.9317-1.7724,2.0938l-3.8252,0.6328c-0.9678,0.1601-1.7432-0.5196-1.7315-1.5137l0.3203-30.0317c0.0118-0.9971,0.8038-1.9336,1.7715-2.0928l11.294-1.8682c3.8271-0.6328,6.4716,1.6309,6.4345,5.0938l-0.0449,4.27c-0.0381,3.5117-1.1719,6.1133-4.5859,7.0098c3.6406-0.4121,4.9951,1.9668,4.958,5.4316l-0.0947,8.8711C99.4484,36.4955,98.6565,37.4311,97.7356,37.5834z M92.219,12.4663c0.0107-0.9942-0.8096-1.711-1.8233-1.545l-3.457,0.5703l-0.0811,7.4981l3.458-0.5723c1.0137-0.1679,1.8516-1.1582,1.8653-2.2031L92.219,12.4663z"></path><path fill="#372E50" d="M121.8469,33.5971l-17.7031,2.9277c-0.9219,0.1504-1.6524-0.4863-1.6407-1.4335l0.0362-3.3692c0.0224-2.1367,0.2588-2.6484,0.8203-3.5937l11.3525-20.1568l-9.543,1.5762c-0.9228,0.1523-1.6513-0.4844-1.6416-1.4336l0.0362-3.3682c0.0097-0.9482,0.7558-1.8291,1.6777-1.9814l16.5957-2.7442c0.877-0.1445,1.6065,0.4932,1.5957,1.4424l-0.0371,3.4151c-0.0039,0.332-0.0176,1.7558-0.5351,2.6933L111.0852,28.603l10.8339-1.791c0.9209-0.1524,1.6504,0.4863,1.6407,1.4335l-0.0352,3.3692C123.5148,32.5639,122.7688,33.4448,121.8469,33.5971z"></path>
+</svg>
+</a>
+          </div>
+          <div class="col-md-6 align-middle">
+            <img src="assets/img/print-it.png" alt="" width="500px" />
+          </div>
         </div>
       </section>
     </div>
     <div class="container full-screen">
-      <section class="full-screen blue" id="section-7">
-        <div>
-          <p>Section Cuatro</p>
+      <section class="full-screen" id="section-7">
+        <div class="row">
+          <div class="col-md-3 align-middle align-right">
+            <h1 class="title-one-blue">screencast/demo</h1>
+          </div>
         </div>
       </section>
     </div>
     <div class="container full-screen">
-      <section class="full-screen blue" id="section-8">
-        <div>
-          <p>Section Cuatro</p>
+      <section class="full-screen" id="section-8">
+        <div class="row">
+          <div class="col-md-3 align-middle align-right">
+            <h1 class="title-one-blue">The <br> Team</h1>
+          </div>
+          <div class="col-md-3 align-middle">
+            <h1 class="title-one-blue">Our <br> Story</h1>
+            <p><b>Why Instant ?</b> <br><br>
+
+Our desire was to help people store and collect all their pictures from all their devices to make it more accessible and live a unique and emotional experience. The idea was to bypass the sorting phase because we did not want to have to sort our photo out. That’s why we imagined an automatic sorting system through a clever analysis of each picture.<br>
+
+<b>Instant is a smart and fast search photo tool</b><br><br>
+
+Each photo comes with a context which contains data, metadata, a description by keywords with tags, a date, a place and even an emotional state. We put this analysis at the heart of our projet.
+
+</p>
+          </div>
+          <div class="col-md-3 align-middle">
+            <ul class="blue-bullet">
+              <li><span>
+                We wanted Instant to be a private space to store souvenirs you care about the most, which often haven't their place on social networks.
+              </span></li>
+              <li><span>
+                We wanted Instant to be a private space to store souvenirs you care about the most, which often haven't their place on social networks.
+              </span></li>
+              <li><span>
+                We wanted Instant to be a private space to store souvenirs you care about the most, which often haven't their place on social networks.
+              </span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="container full-screen">
+      <section class="full-screen" id="section-9">
+        <div class="row">
+          <div class="col-md-3 align-right">
+            <h1 class="title-one-blue">Contact</h1>
+            <p>
+              Don’t hesitate to email us
+or connect on Twitter and Facebook !
+We don’t bite ;)
+            </p>
+          </div>
+          <div class="col-md-3 align-middle">
+            <h1 class="title-one-blue">Thanks</h1>
+          </div>
+          <div class="col-md-4 align-middle">
+            <p>
+              Véronique Ficara, Catherine Nyeki, Stéphane Pestourie, Adrien Havet, Nicolas Baberien, Antoine Visionneau, Jonathan Blanchet, Benoît Widemann, Matthieu Decarli, Tony Housiaux, Muriel Mehong, Geoffrey Dorne, Patricia Bednarski, Isabelle Dauvergne and Thierry Audoux.<br><br>
+              <span class="color-blue">&amp;</span><br><br>
+              <span class="color-blue">a special thanks to</span><br>
+              Julien Taillez, Alexis Oney, Mafe Ariza, Eira Ennis, Marjorie Rouffet et l'équipe Cheerz.
+            </p>
+          </div>
         </div>
       </section>
     </div>
