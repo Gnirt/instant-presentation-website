@@ -27,34 +27,35 @@ scene_object = {
 */
 var scenes = {
   'section-1': {
-    'section-1': 'anchor1'
+    'section-1': ['anchor1']
   },
   'section-2': {
-    'section-2': 'anchor2'
+    'section-2': ['anchor2']
   },
   'section-3': {
-    'section-3': 'anchor3'
+    'section-3': ['anchor3']
   },
   'section-4': {
-    'section-4': 'anchor4'
+    'section-4': ['anchor4']
   },
   'section-5': {
-    'section-5': 'anchor5'
+    'section-5': ['anchor5']
   },
   'section-6': {
-    'section-6': 'anchor6'
+    'section-6': ['anchor6']
   },
   'section-7': {
-    'section-7': 'anchor7'
+    'section-7': ['anchor7']
   },
   'section-8': {
-    'section-8': 'anchor8'
+    'section-8': ['anchor8']
   },
   'section-9': {
-    'section-9': 'anchor9'
+    'section-9': ['anchor9']
   }
 };
 
+var current_scene;
 
 for(var key in scenes) {
   // skip loop if the property is from prototype
@@ -67,7 +68,17 @@ for(var key in scenes) {
     if(!obj.hasOwnProperty(prop)) continue;
 
     new ScrollMagic.Scene({ triggerElement: '#'+prop })
-        .setClassToggle('#'+obj[prop], 'active')
+        .setClassToggle('#'+obj[prop][0], 'active')
+        .on('enter', function(event) {
+          current_scene = event.target;
+          var current_id = current_scene.triggerElement().id;
+          $(".anchor-nav-side").removeClass("previous next");
+          $(".anchor" + (parseInt(current_id.charAt(current_id.length - 1)) - 1)).addClass("previous");
+          $(".anchor" + (parseInt(current_id.charAt(current_id.length - 1)) + 1)).addClass("next");
+          if (current_id == 'section-9') {
+            $("#next-section").hide();
+          }
+        })
         .addTo(controller);
   }
 }
@@ -90,11 +101,10 @@ controller.scrollTo(function(target) {
 
 //  Bind scroll to anchor links using Vanilla JavaScript
 var anchor_nav = document.querySelector('.anchor-nav');
-
-anchor_nav.addEventListener('click', function(e) {
+var navScroll = function(e) {
   var target = e.target,
       id     = target.getAttribute('href');
-
+  console.log(id);
   if(id !== null) {
     if(id.length > 0) {
       e.preventDefault();
@@ -106,6 +116,20 @@ anchor_nav.addEventListener('click', function(e) {
     }
   }
   closeNav();
+};
+anchor_nav.addEventListener('click', navScroll);
+$(".anchor-nav-side").on('click', navScroll);
+
+$('.hoverActiveClass').mouseenter(function(){
+  $(this).addClass('active');
+  $(this).find("img").attr('src', "assets/img/icons/" + $(this).data('img') + "-blue.png");
+});
+$('.hoverActiveClass').mouseleave(function(){
+  $(this).removeClass('active');
+  $(this).find("img").attr('src', "assets/img/icons/" + $(this).data('img') + "-grey.png");
+});
+$('#next-section').on('click', function(){
+  controller.scrollTo("#" + $(current_scene.triggerElement()).parent().next().find("section")[0].id);
 });
 
 var container = $("#container");
