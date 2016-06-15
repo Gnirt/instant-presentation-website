@@ -82,7 +82,7 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="#">
-            <img alt="" src="assets/img/instant-logo.png" width="120">
+            <img alt="" src="assets/img/instant-logo-white.png" width="120">
           </a>
         </div>
 
@@ -100,7 +100,7 @@
               document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
             </script>
             <li class="dropdown">
-              <a href="#showside" onclick="openNav()"><img alt="" src="assets/img/icons/icon-menu.png" width="30"></a>
+              <a id="nav-icon-menu"href="#showside" onclick="openNav()"><img alt="" src="assets/img/icons/icon-menu-white.png" width="30"></a>
             </li>
           </ul>
         </div><!-- /.navbar-collapse -->
@@ -206,21 +206,21 @@ So that you can print your instants in one click and enjoy <br>delightful moment
     </div>
     <div class="container full-screen">
       <section class="full-screen" id="section-8">
-        <div class="row">
+        <div id="our-story-row" class="row transition-story">
           <div class="col-md-2 align-middle align-right">
-            <h1 class="title-one-blue">The <br> Team</h1>
+            <h1 id="the-team" class="title-one-blue color-blue-light clickable">The <br> Team</h1>
           </div>
           <div class="col-md-4 align-middle">
             <h1 class="title-one-blue">Our <br> Story</h1>
-            <p><b>Why Instant ?</b> <br><br>
+            <p><b>Why Instant ?</b><br><br>
 
-Our desire was to help people store and collect all their pictures from all their devices to make it more accessible and live a unique and emotional experience. The idea was to bypass the sorting phase because we did not want to have to sort our photo out. That’s why we imagined an automatic sorting system through a clever analysis of each picture.<br>
+            Our desire was to help people store and collect all their pictures from all their devices to make it more accessible and live a unique and emotional experience. The idea was to bypass the sorting phase because we did not want to have to sort our photo out. That’s why we imagined an automatic sorting system through a clever analysis of each picture.<br>
 
-<b>Instant is a smart and fast search photo tool</b><br><br>
+            <b>Instant is a smart and fast search photo tool</b><br><br>
 
-Each photo comes with a context which contains data, metadata, a description by keywords with tags, a date, a place and even an emotional state. We put this analysis at the heart of our projet.
+            Each photo comes with a context which contains data, metadata, a description by keywords with tags, a date, a place and even an emotional state. We put this analysis at the heart of our projet.
 
-</p>
+            </p>
           </div>
           <div class="col-md-4 align-middle">
             <ul class="blue-bullet">
@@ -234,6 +234,79 @@ Each photo comes with a context which contains data, metadata, a description by 
                 We wanted Instant to be a private space to store souvenirs you care about the most, which often haven't their place on social networks.
               </span></li>
             </ul>
+          </div>
+        </div>
+        <div id="the-team-row" class="row transition-story present">
+          <div class="col-md-3 align-middle align-right">
+            <div class="col-md-2">
+              <p class="team-name">
+                Adrien Lavisiera <br>
+                <span class="color-blue">Developer</span>
+              </p>
+            </div>
+            <div class="col-md-10 margin-bot-20">
+              <a href="https://www.linkedin.com/in/adrien-lavisiera-754a6996" target="_blank">
+                <img src="assets/img/team/adrien.jpg" alt="adrien picture" width="180px" height="180px" />
+              </a>
+            </div>
+            <div class="col-md-2">
+              <p class="team-name">
+                Clémence Taillez <br>
+                <span class="color-blue">Designer</span>
+              </p>
+            </div>
+            <div class="col-md-10">
+              <a href="https://www.linkedin.com/in/clémence-taillez-6a72928b" target="_blank">
+                <img src="assets/img/team/clemence.jpg" alt="clemence picture" width="180px" height="180px" />
+              </a>
+            </div>
+          </div>
+            <div class="col-md-3 align-middle align-right">
+              <div class="col-md-2">
+                <p class="team-name">
+                  Cédrine Pradier<br>
+                  <span class="color-blue">Designer</span>
+                </p>
+              </div>
+              <div class="col-md-10 margin-bot-20">
+                <a href="https://www.linkedin.com/in/cedrine-pradier-7435b19b" target="_blank">
+                  <img src="assets/img/team/cedrine.jpg" alt="cedrine picture" width="180px" height="180px" />
+                </a>
+              </div>
+              <div class="col-md-2">
+                <p class="team-name">
+                  Philippe Tring <br>
+                  <span class="color-blue">Developer</span>
+                </p>
+              </div>
+              <div class="col-md-10">
+                <a href="https://www.linkedin.com/in/philippe-tring-6b981158" target="_blank">
+                  <img src="assets/img/team/philippe.jpg" alt="philippe picture" width="180px" height="180px" />
+                </a>
+              </div>
+            </div>
+          <div class="col-md-3 align-right align-middle">
+            <h1 class="title-one-blue">The <br> Team</h1>
+            <p>
+              <b>The dream team!</b><br>
+              Composed by talented people <br>
+               loving what they do. <br>
+              One mission, make things works. <br>
+            </p>
+            <div class="col-md-2">
+              <p class="team-name">
+                Wylhem Geneviève <br>
+                <span class="color-blue">Designer</span></a>
+              </p>
+            </div>
+            <div class="col-md-10">
+              <a href="https://www.linkedin.com/in/wylhem-geneviève-52327a6a" target="_blank">
+                <img src="assets/img/team/adrien.png" alt="philippe picture" width="180px" height="180px" />
+              </a>
+            </div>
+          </div>
+          <div class="col-md-3 align-middle">
+            <h1 id="our-story" class="title-one-blue color-blue-light clickable">Our <br> Story</h1>
           </div>
         </div>
       </section>
@@ -283,7 +356,7 @@ We don’t bite ;)
         </div>
       </section>
     </div>
-    <div id="next-section" class="col-md-12">
+    <div id="next-section" class="col-md-12 clickable">
       <img class="bounce" src="assets/img/icons/next-section.png" alt="next section" width="30px" />
     </div>
     <script src="assets/js/main.js"></script>

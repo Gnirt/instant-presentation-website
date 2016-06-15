@@ -69,6 +69,10 @@ body {
   border-width: 2px;
   color: #3FADE3;
 }
+.btn.btn-default.btn-instant.btn-white {
+  color: white;
+  border-color: white;
+}
 .color-blue {
   color: #75ADF2;
 }
@@ -267,4 +271,37 @@ div.active {
 #right-nav li a.next {
   display: block;
   color: #CDCDCD;
+}
+.color-blue-light {
+  color: #D1E2F7;
+}
+
+.transition-story {
+  display: none;
+  transition: transform .2s ease-in-out;
+}
+
+.transition-story.present {
+  display: block;
+  transform: translate3d(0px, 0px, 0px);
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.team-name {
+  text-align: center;
+  writing-mode:tb-rl;
+  -webkit-transform:rotate(180deg);
+  -moz-transform:rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform:rotate(180deg);
+  transform: rotate(180deg);
+  white-space:nowrap;
+  margin-top: 40px;
+}
+
+.margin-bot-20 {
+  margin-bottom: 20px;
 }

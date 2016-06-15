@@ -78,6 +78,17 @@ for(var key in scenes) {
           if (current_id == 'section-9') {
             $("#next-section").hide();
           }
+          if (current_id != 'section-1') {
+            $(".navbar-brand").find("img").attr('src', "assets/img/instant-logo.png");
+            $("#nav-icon-menu").find("img").attr('src', "assets/img/icons/icon-menu.png");
+            $("#open-popup").removeClass("btn-white");
+            $("#right-nav").show();
+          } else {
+            $(".navbar-brand").find("img").attr('src', "assets/img/instant-logo-white.png");
+            $("#nav-icon-menu").find("img").attr('src', "assets/img/icons/icon-menu-white.png");
+            $("#open-popup").addClass("btn-white");
+            $("#right-nav").hide();
+          }
         })
         .addTo(controller);
   }
@@ -147,3 +158,12 @@ setInterval(function(){
   });
 
 },4000);
+
+$("#the-team").on('click', function() {
+  $("#our-story-row").removeClass("present");
+  $("#the-team-row").addClass("present");
+});
+$("#our-story").on('click', function() {
+  $("#our-story-row").addClass("present");
+  $("#the-team-row").removeClass("present");
+});
