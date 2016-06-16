@@ -68,12 +68,13 @@ for(var key in scenes) {
     if(!obj.hasOwnProperty(prop)) continue;
 
     new ScrollMagic.Scene({ triggerElement: '#'+prop })
-        .setClassToggle('#'+obj[prop][0], 'active')
+        // .setClassToggle('#'+obj[prop][0], 'active')
         .on('enter', function(event) {
           current_scene = event.target;
           var current_id = current_scene.triggerElement().id;
-          $(".anchor-nav-side").removeClass("previous next");
+          $(".anchor-nav-side").removeClass("previous next active");
           $(".anchor" + (parseInt(current_id.charAt(current_id.length - 1)) - 1)).addClass("previous");
+          $(".anchor" + current_id.charAt(current_id.length - 1)).addClass("active");
           $(".anchor" + (parseInt(current_id.charAt(current_id.length - 1)) + 1)).addClass("next");
           if (current_id == 'section-9') {
             $("#next-section").hide();
@@ -111,7 +112,6 @@ controller.scrollTo(function(target) {
 
 
 //  Bind scroll to anchor links using Vanilla JavaScript
-var anchor_nav = document.querySelector('.anchor-nav');
 var navScroll = function(e) {
   var target = e.target,
       id     = target.getAttribute('href');
@@ -128,7 +128,6 @@ var navScroll = function(e) {
   }
   closeNav();
 };
-anchor_nav.addEventListener('click', navScroll);
 $(".anchor-nav-side").on('click', navScroll);
 
 $('.hoverActiveClass').mouseenter(function(){

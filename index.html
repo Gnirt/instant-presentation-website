@@ -27,22 +27,21 @@
 
 <body>
   <video autoplay loop poster="assets/img/bg-video.png" id="bgvid">
-    <source src="assets/video/teaser.webm" type="video/webm">
     <source src="assets/video/teaser.mp4" type="video/mp4">
   </video>
   <div id="main">
     <nav class="navbar navbar-default navbar-fixed-top nav-instant">
       <div id="mySidenav" class="sidenav anchor-nav">
         <span class="closebtn" onclick="closeNav()">&times;</span>
-        <a href="#section-1" id="anchor1">Home<br>01</a>
-        <a href="#section-2" id="anchor2">Collect<br>02</a>
-        <a href="#section-3" id="anchor3">Find<br>03</a>
-        <a href="#section-4" id="anchor4">Share<br>04</a>
-        <a href="#section-5" id="anchor5">Anywhere<br>05</a>
-        <a href="#section-6" id="anchor6">Print it<br>06</a>
-        <a href="#section-7" id="anchor7">Demo<br>07</a>
-        <a href="#section-8" id="anchor8">About<br>08</a>
-        <a href="#section-9" id="anchor9">Contact<br>09</a>
+        <a href="#section-1" class="anchor1 anchor-nav-side">Home<br>01</a>
+        <a href="#section-2" class="anchor2 anchor-nav-side">Collect<br>02</a>
+        <a href="#section-3" class="anchor3 anchor-nav-side">Find<br>03</a>
+        <a href="#section-4" class="anchor4 anchor-nav-side">Share<br>04</a>
+        <a href="#section-5" class="anchor5 anchor-nav-side">Anywhere<br>05</a>
+        <a href="#section-6" class="anchor6 anchor-nav-side">Print it<br>06</a>
+        <a href="#section-7" class="anchor7 anchor-nav-side">Demo<br>07</a>
+        <a href="#section-8" class="anchor8 anchor-nav-side">About<br>08</a>
+        <a href="#section-9" class="anchor9 anchor-nav-side">Contact<br>09</a>
       </div>
       <ul id="right-nav">
         <li>
@@ -106,8 +105,7 @@
         </div><!-- /.navbar-collapse -->
       </div>
     </nav>
-    <div class="container full-screen">
-      <section class="full-screen" id="section-1">
+      <section class="container full-screen" id="section-1">
         <div class="row">
           <div class="col-md-5 col-md-offset-1" style="margin-top:20%">
             <h1 class="video-hide" style="font-size:58px;color:white;">Find your...</h1>
@@ -116,9 +114,7 @@
           </div>
         </div>
       </section>
-    </div>
-    <div class="container full-screen">
-      <section class="full-screen" id="section-2">
+      <section class="container full-screen" id="section-2">
         <div class="row">
           <div class="col-md-6 align-middle align-right">
             <h1 class="title-one-blue">Bring your photo together,
@@ -131,9 +127,7 @@ With Instant, you can save, store and collect automatically<br> your pictures fr
           </div>
         </div>
       </section>
-    </div>
-    <div class="container full-screen">
-      <section class="full-screen" id="section-3">
+      <section class="container full-screen" id="section-3">
         <div class="row">
           <div class="col-md-6 align-middle align-right">
             <img src="assets/img/find.png" alt="" width="500px" />
@@ -147,9 +141,7 @@ You are looking for a specific photo of your kitten ?<br> Just write
           </div>
         </div>
       </section>
-    </div>
-    <div class="container full-screen">
-      <section class="full-screen" id="section-4">
+      <section class="container full-screen" id="section-4">
         <div class="row">
           <div class="col-md-6 align-middle align-right">
             <h1 class="title-one-blue">Share them instantly.</h1>
@@ -161,9 +153,7 @@ With the Instant shared <br>albums function, send your best moments to your <br>
           </div>
         </div>
       </section>
-    </div>
-    <div class="container full-screen">
-      <section class="full-screen" id="section-5">
+      <section class="container full-screen" id="section-5">
         <div class="row">
           <div class="col-md-6 align-middle align-right">
             <img src="assets/img/anywhere.png" alt="" width="500px" />
@@ -176,9 +166,7 @@ One app.</h1>
           </div>
         </div>
       </section>
-    </div>
-    <div class="container full-screen">
-      <section class="full-screen" id="section-6">
+    <section class="container full-screen" id="section-6">
         <div class="row">
           <div class="col-md-6 align-middle align-right">
             <h1 class="title-one-blue">Bring life to your photos.</h1>
@@ -194,18 +182,18 @@ So that you can print your instants in one click and enjoy <br>delightful moment
           </div>
         </div>
       </section>
-    </div>
-    <div class="container full-screen">
-      <section class="full-screen" id="section-7">
+      <section id="section-7" class="container full-screen">
         <div class="row">
-          <div class="col-md-3 align-middle align-right">
-            <h1 class="title-one-blue">screencast/demo</h1>
+          <div class="col-md-12 align-middle">
+            <img id="screencast-img" class="clickable" src="assets/img/demo.png" alt="demonstration screen" width="1000px" />
+            <video loop id="screencast" style="display:none;">
+             <source src="assets/video/teaser.mp4" type='video/mp4'>
+             <p>Your user agent does not support the HTML5 Video element.</p>
+            </video>
           </div>
         </div>
       </section>
-    </div>
-    <div class="container full-screen">
-      <section class="full-screen" id="section-8">
+      <section id="section-8" class="container full-screen">
         <div id="our-story-row" class="row transition-story">
           <div class="col-md-2 align-middle align-right">
             <h1 id="the-team" class="title-one-blue color-blue-light clickable">The <br> Team</h1>
@@ -310,9 +298,7 @@ So that you can print your instants in one click and enjoy <br>delightful moment
           </div>
         </div>
       </section>
-    </div>
-    <div class="container full-screen">
-      <section class="full-screen" id="section-9">
+    <section class="container full-screen" id="section-9">
         <div class="row">
           <div class="col-md-3 align-right">
             <h1 class="title-one-blue"><b>Contact</b></h1>
@@ -355,7 +341,6 @@ We don’t bite ;)
           </div>
         </div>
       </section>
-    </div>
     <div id="next-section" class="col-md-12 clickable">
       <img class="bounce" src="assets/img/icons/next-section.png" alt="next section" width="30px" />
     </div>
