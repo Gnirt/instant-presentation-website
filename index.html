@@ -16,13 +16,14 @@
   <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-  <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
   <script src="assets/js/scrollmagic.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/ScrollToPlugin.min.js"></script>
   <script src="assets/js/jquery.shuffleLetters.js"></script>
+  <script src="assets/js/jquery.mousewheel.js"></script>
 </head>
 
 <body>
@@ -105,29 +106,29 @@
         </div><!-- /.navbar-collapse -->
       </div>
     </nav>
-      <section class="container full-screen" id="section-1">
-        <div class="row">
-          <div class="col-md-5 col-md-offset-1" style="margin-top:20%">
-            <h1 class="video-hide" style="font-size:58px;color:white;">Find your...</h1>
-            <p id="container" class="video-hide" style="font-size:40px;color:white;">--- Holidays photos</p>
+      <section class="container full-screen slider" id="section-1">
+        <div class="row align-middle">
+          <div class="col-md-5 col-md-offset-1">
+            <h1 style="font-size:58px;color:white;">Find your...</h1>
+            <p id="shuffle-words" style="font-size:40px;color:white;">--- photos</p>
             <p><a style="background-color:white;color: black; border-color:white;border-radius:0px" class="btn btn-primary btn-lg video-hide" id="vidpause" href="#" role="button">Watch the trailer</a></p>
           </div>
         </div>
       </section>
-      <section class="container full-screen" id="section-2">
+      <section class="container full-screen slider" id="section-2">
         <div class="row">
           <div class="col-md-6 align-middle align-right">
             <h1 class="title-one-blue">Bring your photo together,
 without noticing it!</h1>
             <p class="margin-top-40"><b>All your photo in one place without bothering you.</b><br>
-With Instant, you can save, store and collect automatically<br> your pictures from your phone, desktop and from all your<br> devices but also from all your social network.</p>
+With Instant, you can save, store and collect automatically<br> your pictures from your phone, desktop and from all your<br> devices but also from your social network.</p>
           </div>
           <div class="col-md-6 align-middle">
             <img src="assets/img/collect.png" alt="" width="500px" />
           </div>
         </div>
       </section>
-      <section class="container full-screen" id="section-3">
+      <section class="container full-screen slider" id="section-3">
         <div class="row">
           <div class="col-md-6 align-middle align-right">
             <img src="assets/img/find.png" alt="" width="500px" />
@@ -137,36 +138,35 @@ With Instant, you can save, store and collect automatically<br> your pictures fr
 back easily !</h1>
             <p class="margin-top-40"><b>Instant parse / analyse each photo to help you find a photo<br> in your archives.</b>
 You are looking for a specific photo of your kitten ?<br> Just write
-« cat » or else as the location / the place <br> or the time of the shooting. <br>Forget manual sorting and start entering a tag as a place,<br> an object or even an emotion !</p>
+« cat » or something else like a location <br> or a date. <br>Forget manual sorting and type a tag, a place,<br> an object or even an emotion !</p>
           </div>
         </div>
       </section>
-      <section class="container full-screen" id="section-4">
+      <section class="container full-screen slider" id="section-4">
         <div class="row">
           <div class="col-md-6 align-middle align-right">
             <h1 class="title-one-blue">Share them instantly.</h1>
             <p class="margin-top-40"><b>Now that you can get your photo easily, you can also<br> share them simply and quickly ! </b>
-With the Instant shared <br>albums function, send your best moments to your <br> friends ou family by / through / via Facebook,<br> Instagram, Whatsapp, Twitter or even by email.</p>
+With Instant shared <br>albums function, send your best moments to your <br> friends or family through Facebook,<br> Instagram, Whatsapp, Twitter or even by email.</p>
           </div>
           <div class="col-md-6 align-middle">
             <img src="assets/img/share.png" alt="" width="500px" />
           </div>
         </div>
       </section>
-      <section class="container full-screen" id="section-5">
+      <section class="container full-screen slider" id="section-5">
         <div class="row">
           <div class="col-md-6 align-middle align-right">
             <img src="assets/img/anywhere.png" alt="" width="500px" />
           </div>
           <div class="col-md-6 align-middle">
-            <h1 class="title-one-blue">All your moments.
-One app.</h1>
-            <p class="margin-top-40"><b>Instant is a multi device app available on <br> desktop, iPad, mobile and the Web.</b> Thanks to our <br>cloud service, you can access to your photo at <br> anytime from anywhere.
+            <h1 class="title-one-blue">All your moments.</h1>
+            <p class="margin-top-40"><b>Instant is a multi device application available on <br> desktop, tablet, mobile and the Web.</b> Thanks to our <br>cloud service, you can access to your photo at <br> anytime from anywhere.
 </p>
           </div>
         </div>
       </section>
-    <section class="container full-screen" id="section-6">
+    <section class="container full-screen slider" id="section-6">
         <div class="row">
           <div class="col-md-6 align-middle align-right">
             <h1 class="title-one-blue">Bring life to your photos.</h1>
@@ -182,7 +182,7 @@ So that you can print your instants in one click and enjoy <br>delightful moment
           </div>
         </div>
       </section>
-      <section id="section-7" class="container full-screen">
+      <section id="section-7" class="container full-screen slider">
         <div class="row">
           <div class="col-md-12 align-middle">
             <img id="screencast-img" class="clickable" src="assets/img/demo.png" alt="demonstration screen" width="1000px" />
@@ -193,8 +193,8 @@ So that you can print your instants in one click and enjoy <br>delightful moment
           </div>
         </div>
       </section>
-      <section id="section-8" class="container full-screen">
-        <div id="our-story-row" class="row transition-story">
+      <section id="section-8" class="container full-screen slider">
+        <div id="our-story-row" class="row transition-story present">
           <div class="col-md-2 align-middle align-right">
             <h1 id="the-team" class="title-one-blue color-blue-light clickable">The <br> Team</h1>
           </div>
@@ -202,7 +202,7 @@ So that you can print your instants in one click and enjoy <br>delightful moment
             <h1 class="title-one-blue">Our <br> Story</h1>
             <p><b>Why Instant ?</b><br><br>
 
-            Our desire was to help people store and collect all their pictures from all their devices to make it more accessible and live a unique and emotional experience. The idea was to bypass the sorting phase because we did not want to have to sort our photo out. That’s why we imagined an automatic sorting system through a clever analysis of each picture.<br>
+            Our desire is to help people store and collect all their pictures from their devices to make it more accessible and live a unique and emotional experience. The idea is to bypass the manual sorting because nobody wants to sort his photos. That’s why we imagined an automatic sorting system through a clever analysis of each picture.<br>
 
             <b>Instant is a smart and fast search photo tool</b><br><br>
 
@@ -216,15 +216,16 @@ So that you can print your instants in one click and enjoy <br>delightful moment
                 We wanted Instant to be a private space to store souvenirs you care about the most, which often haven't their place on social networks.
               </span></li>
               <li><span>
-                We wanted Instant to be a private space to store souvenirs you care about the most, which often haven't their place on social networks.
+                We put everything and provided all the efforts to make Instant the most easiest thing to use. Finding a picture should be a pleasure for you.
               </span></li>
               <li><span>
-                We wanted Instant to be a private space to store souvenirs you care about the most, which often haven't their place on social networks.
+                We think algorithms are not everything and you remain the only one to know which photos mean the most to you.
+                <!-- We’re big believers in the power of keeping it simple. Every bet we’ve ever placed on making something easier for our customers has always paid off. -->
               </span></li>
             </ul>
           </div>
         </div>
-        <div id="the-team-row" class="row transition-story present">
+        <div id="the-team-row" class="row transition-story">
           <div class="col-md-3 align-middle align-right">
             <div class="col-md-2">
               <p class="team-name">
@@ -278,8 +279,8 @@ So that you can print your instants in one click and enjoy <br>delightful moment
             <p>
               <b>The dream team!</b><br>
               Composed by talented people <br>
-               loving what they do. <br>
-              One mission, make things works. <br>
+               who love what they do. <br>
+              With one mission, build the best product. <br>
             </p>
             <div class="col-md-2">
               <p class="team-name">
@@ -298,32 +299,33 @@ So that you can print your instants in one click and enjoy <br>delightful moment
           </div>
         </div>
       </section>
-    <section class="container full-screen" id="section-9">
+    <section class="container full-screen slider" id="section-9">
         <div class="row">
           <div class="col-md-3 align-right">
             <h1 class="title-one-blue"><b>Contact</b></h1>
             <p>
-              Don’t hesitate to email us
+              <!-- Don’t hesitate to email us
 or connect on Twitter and Facebook !
-We don’t bite ;)
+We don’t bite ;) -->
+We are working very hard and we iterate and improve our product again and again. We are always keen to hear your feedback and are thankful to hear about your experience with Instant. Hit us up if you need anything, we will be quick in responding and helping you out.
             </p>
           </div>
           <div class="col-md-3 no-padding-right">
-            <div class="white-box pull-right hoverActiveClass" style="margin-top:80px;" data-img="facebook">
+            <div class="white-box pull-right hoverActiveClass" style="margin-top:140px;" data-img="facebook">
               <img src="assets/img/icons/facebook-grey.png" alt="facebook" style="padding-top:5px;" />
             </div>
-            <h1 class="title-one-blue align-middle"><b>Thanks</b></h1>
+            <h1 class="title-one-blue" style="margin-top:350px"><b>Thanks</b></h1>
           </div>
           <div class="col-md-4 no-padding-left">
-            <div class="white-box hoverActiveClass" data-img="twitter">
-              <img src="assets/img/icons/twitter-grey.png" alt="twitter" />
+            <div class="white-box hoverActiveClass" data-img="twitter" style="margin-top:60px;">
+              <img src="assets/img/icons/twitter-grey.png" alt="twitter" style="margin-top: 20px;" />
             </div>
             <div class="white-box hoverActiveClass" style="width:300px;display:block;margin-top:80px;">
               <p style="padding-top:30px;">
                 Or email us at <a href="mailto:philippetring+instant@gmail.com"><b>hello@instant.io</b></a>
               </p>
             </div>
-            <p style="padding-top:80px;">
+            <p style="padding-top:40px;">
               Véronique Ficara, Catherine Nyeki, Stéphane Pestourie, Adrien Havet, Nicolas Baberien, Antoine Visionneau, Jonathan Blanchet, Benoît Widemann, Matthieu Decarli, Tony Housiaux, Muriel Mehong, Geoffrey Dorne, Patricia Bednarski, Isabelle Dauvergne and Thierry Audoux.<br><br>
               <span class="color-blue"><b>&amp;</b></span><br><br>
               <span class="color-blue">a special thanks to</span><br>
@@ -345,6 +347,7 @@ We don’t bite ;)
       <img class="bounce" src="assets/img/icons/next-section.png" alt="next section" width="30px" />
     </div>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/instant-scrolling.js"></script>
     <script src="assets/js/video_fullscreen.js"></script>
   </div>
 </body>
