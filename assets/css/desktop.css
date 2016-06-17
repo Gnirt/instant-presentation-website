@@ -427,3 +427,13 @@ div.active {
   padding: 0;
   margin: -10px 45px;
 }
+
+#mySidenav .anchor-nav-side {
+  font-size: 16px;
+  padding: 15px 8px;
+  letter-spacing: 0;
+}
+
+.no-text-deco:hover {
+  text-decoration: none;
+}
