@@ -1,14 +1,23 @@
+$('#nav-icon1').click(function(){
+  $('#nav-icon1').toggleClass('open');
+  if ($('#nav-icon1').hasClass("open")) {
+    openNav();
+  } else {
+    closeNav();
+  }
+});
 function openNav() {
     document.getElementById("mySidenav").style.width = "200px";
     document.getElementById("main").style.marginRight = "200px";
-    document.getElementById("open-popup").style.marginRight = "150px";
+    document.getElementById("open-popup").style.marginRight = "50px";
 }
 
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
 function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginRight = "0";
-    document.getElementById("open-popup").style.marginRight = "30px";
+  $('#nav-icon1').removeClass('open');
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginRight = "0";
+  document.getElementById("open-popup").style.marginRight = "30px";
 }
 
 $('.hoverActiveClass').mouseenter(function(){

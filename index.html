@@ -33,7 +33,6 @@
   <div id="main">
     <nav class="navbar navbar-default navbar-fixed-top nav-instant">
       <div id="mySidenav" class="sidenav anchor-nav">
-        <span class="closebtn" onclick="closeNav()">&times;</span>
         <a style="margin-top:40%;" href="#section-1" class="anchor1 anchor-nav-side">Home 01</a>
         <a href="#section-2" class="anchor2 anchor-nav-side">Collect 02</a>
         <a href="#section-3" class="anchor3 anchor-nav-side">Find 03</a>
@@ -100,7 +99,13 @@
               document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
             </script>
             <li class="dropdown">
-              <a id="nav-icon-menu"href="#showside" onclick="openNav()"><img alt="" src="assets/img/icons/icon-menu-white.png" width="30"></a>
+              <a id="nav-icon-menu" href="#showside">
+                <div id="nav-icon1">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </a>
             </li>
           </ul>
         </div><!-- /.navbar-collapse -->
