@@ -97,13 +97,13 @@ h1 {
 }
 .btn.btn-default.btn-instant:hover {
   color: white;
-  background-color: #3FADE3;
+  background-color: #72B2FF;
 }
 video#bgvid {
     min-width: 50%;
     min-height: 50%;
-    width: auto;
-    height: 100%;
+    width: 100%;
+    height: auto;
     z-index: -100;
     position: absolute;
     top: -40px;
@@ -342,4 +342,16 @@ div.active {
 
 #open-popup {
   transition: margin-right .5s;
+}
+
+.btn.btn-primary.btn-lg.anchor-nav-side {
+  background-color:white;
+  color: black;
+  border-color:white;
+  border-radius:0px
+}
+.btn.btn-primary.btn-lg.anchor-nav-side:hover {
+  color: white;
+  background-color: #72B2FF;
+  /*border-color:#72B2FF;*/
 }

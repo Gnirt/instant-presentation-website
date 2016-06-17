@@ -44,3 +44,11 @@ $("#our-story").on('click', function() {
   $("#our-story-row").addClass("present");
   $("#the-team-row").removeClass("present");
 });
+$(".navbar-brand").hover(function() {
+  //do hover stuff
+  $(this).find("img").attr('src', "assets/img/instant-logo.png");
+}, function() {
+  //do mouseout stuff
+  if (current_scene.triggerElement().id == "section-1")
+    $(this).find("img").attr('src', "assets/img/instant-logo-white.png");
+});
