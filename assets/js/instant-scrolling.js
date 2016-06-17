@@ -77,12 +77,12 @@ for(var key in scenes) {
             $(".navbar-brand").find("img").attr('src', "assets/img/instant-logo.png");
             $("#nav-icon-menu").find("img").attr('src', "assets/img/icons/icon-menu.png");
             $("#open-popup").removeClass("btn-white");
-            $("#right-nav").show();
+            // $("#right-nav").show();
           } else {
             $(".navbar-brand").find("img").attr('src', "assets/img/instant-logo-white.png");
             $("#nav-icon-menu").find("img").attr('src', "assets/img/icons/icon-menu-white.png");
             $("#open-popup").addClass("btn-white");
-            $("#right-nav").hide();
+            // $("#right-nav").hide();
           }
         })
         .addTo(controller);

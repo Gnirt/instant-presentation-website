@@ -1,11 +1,27 @@
 @font-face {
   font-family: "Avenir";
-  src: "../font/Avenir.ttc";
+  src: "../font/Avenir-Book.ttc";
+}
+@font-face {
+  font-family: "Avenir-Medium";
+  src: "../font/Avenir-Medium.ttc";
+}
+@font-face {
+  font-family: "Avenir-Black";
+  src: "../font/Avenir-Black.ttc";
+}
+@font-face {
+  font-family: "Effra-Bold";
+  src: "../font/effra-bold.ttf";
 }
 body {
   background-color: #F3F7F9;
   min-height:100%; padding:0; margin:0;
   font-family: "Avenir", serif;
+}
+h1 {
+  font-family: "Avenir-Black", serif;
+  font-size: 55px;
 }
 /* The side navigation menu */
 .sidenav {
@@ -62,12 +78,15 @@ body {
 }
 .btn.btn-default.btn-instant {
   border-radius: 90px;
-  padding: 5px 20px;
-  margin-top: 10px;
+  font-size: 13px;
+  padding: 2px 20px;
+  margin-top: 14px;
   background-color: transparent;
   border-color: #3FADE3;
   border-width: 2px;
   color: #3FADE3;
+  font-family: "Effra-Bold", serif;
+  margin-right: 30px;
 }
 .btn.btn-default.btn-instant.btn-white {
   color: white;
@@ -81,19 +100,13 @@ body {
   background-color: #3FADE3;
 }
 video#bgvid {
-    /*top: 50%;
-    left: 50%;*/
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
+    min-width: 50%;
+    min-height: 50%;
+    width: 100%;
     height: auto;
     z-index: -100;
     position: absolute;
     top: -40px;
-    /*-ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);*/
     transition: 1s opacity;
 }
 #bgvid:-webkit-full-screen  {
@@ -235,7 +248,7 @@ div.active {
 }
 #right-nav {
   position: fixed;
-  right: 60px;
+  right: 45px;
   margin-top: 50vh;
   transform: translateY(-50%);
 }
@@ -310,4 +323,19 @@ div.active {
 
 .margin-bot-20 {
   margin-bottom: 20px;
+}
+
+.anchor-nav-side {
+  font-family: "Avenir-Medium", serif;
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+
+#shuffle-words {
+  margin-bottom: 28px;
+}
+
+.container {
+  padding-right: 0px;
+  padding-left: 0px;
 }
