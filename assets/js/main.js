@@ -1,12 +1,14 @@
 function openNav() {
     document.getElementById("mySidenav").style.width = "200px";
     document.getElementById("main").style.marginRight = "200px";
+    document.getElementById("open-popup").style.marginRight = "150px";
 }
 
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.marginRight = "0";
+    document.getElementById("open-popup").style.marginRight = "30px";
 }
 
 $('.hoverActiveClass').mouseenter(function(){

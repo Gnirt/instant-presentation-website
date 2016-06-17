@@ -82,9 +82,9 @@ h1 {
   padding: 2px 20px;
   margin-top: 14px;
   background-color: transparent;
-  border-color: #3FADE3;
+  border-color: #72B2FF;
   border-width: 2px;
-  color: #3FADE3;
+  color: #72B2FF;
   font-family: "Effra-Bold", serif;
   margin-right: 30px;
 }
@@ -93,7 +93,7 @@ h1 {
   border-color: white;
 }
 .color-blue {
-  color: #75ADF2;
+  color: #72B2FF;
 }
 .btn.btn-default.btn-instant:hover {
   color: white;
@@ -102,8 +102,8 @@ h1 {
 video#bgvid {
     min-width: 50%;
     min-height: 50%;
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
     z-index: -100;
     position: absolute;
     top: -40px;
@@ -268,7 +268,7 @@ div.active {
   background-color: transparent;
   display: none;
   box-shadow: none;
-  color:#75ADF2;
+  color:#72B2FF;
   transition: transform 500ms ease-out;
   transform: translateY(200px);
 }
@@ -338,4 +338,8 @@ div.active {
 .container {
   padding-right: 0px;
   padding-left: 0px;
+}
+
+#open-popup {
+  transition: margin-right .5s;
 }
