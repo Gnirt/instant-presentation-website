@@ -11,8 +11,8 @@
   src: "../font/Avenir-Black.ttc";
 }
 @font-face {
-  font-family: "Effra-Bold";
-  src: "../font/effra-bold.ttf";
+  font-family: "Effra";
+  src: "../font/effra-regular.ttf";
 }
 body {
   background-color: #F3F7F9;
@@ -45,7 +45,8 @@ h1 {
     color: #CDCDCD;
     display: block;
     transition: 0.3s;
-    text-align: center;
+    text-align: left;
+    /*padding-left: 15%;*/
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -85,7 +86,7 @@ h1 {
   border-color: #72B2FF;
   border-width: 2px;
   color: #72B2FF;
-  font-family: "Effra-Bold", serif;
+  font-family: "Effra", serif;
   margin-right: 30px;
 }
 .btn.btn-default.btn-instant.btn-white {
@@ -271,7 +272,9 @@ div.active {
   transition: transform 500ms ease-out;
   transform: translateY(200px);
 }
-
+#right-nav li a:hover {
+  color:white;
+}
 #right-nav li a.active {
   display: block;
   transform: translateY(0px);
@@ -347,16 +350,17 @@ div.active {
   background-color:white;
   color: black;
   border-color:white;
-  border-radius:0px
+  border-radius:0px;
+  padding: 20px;
 }
 .btn.btn-primary.btn-lg.anchor-nav-side:hover {
   color: white;
   background-color: #72B2FF;
-  /*border-color:#72B2FF;*/
+  border-color:#72B2FF;
 }
 #nav-icon1, #nav-icon2, #nav-icon3, #nav-icon4 {
   width: 30px;
-  height: 45px;
+  height: 25px;
   position: relative;
   margin: 0px auto;
   -webkit-transform: rotate(0deg);
@@ -403,7 +407,7 @@ div.active {
 }
 
 #nav-icon1.open span:nth-child(1) {
-  top: 18px;
+  top: 10px;
   -webkit-transform: rotate(135deg);
   -moz-transform: rotate(135deg);
   -o-transform: rotate(135deg);
@@ -416,21 +420,22 @@ div.active {
 }
 
 #nav-icon1.open span:nth-child(3) {
-  top: 18px;
+  top: 10px;
   -webkit-transform: rotate(-135deg);
   -moz-transform: rotate(-135deg);
   -o-transform: rotate(-135deg);
   transform: rotate(-135deg);
 }
-#nav-icon1.open {
+/*#nav-icon1.open {
   padding: 0;
   margin: -10px 45px;
-}
+}*/
 
 #mySidenav .anchor-nav-side {
   font-size: 16px;
   padding: 15px 8px;
   letter-spacing: 0;
+  padding-left: 60px;
 }
 
 .no-text-deco:hover {
@@ -441,5 +446,5 @@ div.active {
 }
 
 #title-thanks {
-  margin-top:350px;
+  margin-top: 60px;
 }

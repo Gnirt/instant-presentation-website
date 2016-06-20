@@ -28,13 +28,16 @@
 </head>
 
 <body>
-  <video autoplay loop muted="true" poster="assets/img/bg-video.png" id="bgvid">
+  <video autoplay loop muted="true" id="bgvid">
+    <source src="assets/video/boucle_light_site.mp4" type="video/mp4">
+  </video>
+  <video loop id="teaser-video" style="display:none;">
     <source src="assets/video/teaser-v1.mp4" type="video/mp4">
   </video>
   <div id="main">
     <nav class="navbar navbar-default navbar-fixed-top nav-instant">
       <div id="mySidenav" class="sidenav anchor-nav">
-        <a style="margin-top:40%;" href="#section-1" class="anchor1 anchor-nav-side">01 Home</a>
+        <a style="" href="#section-1" class="anchor1 anchor-nav-side">01 Home</a>
         <a href="#section-2" class="anchor2 anchor-nav-side">02 Collect</a>
         <a href="#section-3" class="anchor3 anchor-nav-side">03 Find</a>
         <a href="#section-4" class="anchor4 anchor-nav-side">04 Share</a>
@@ -136,7 +139,7 @@ With Instant, you can save, store and collect automatically<br> your pictures fr
 back easily !</h1>
             <p class="margin-top-40"><b>Instant parse / analyse each photo to help you find a photo<br> in your archives.</b>
 You are looking for a specific photo of your kitten ?<br> Just write
-« cat » or something else like a location <br> or a date. <br>Forget manual sorting and type a tag, a place,<br> an object or even an emotion !</p>
+« cat » or something else like a location or a date. <br>Forget manual sorting and type a tag, a place,<br> an object or even an emotion !</p>
           </div>
         </div>
       </section>
@@ -159,7 +162,7 @@ With Instant shared <br>albums function, send your best moments to your <br> fri
           </div>
           <div class="col-md-6 col-md-offset-0 align-middle col-xs-9 col-xs-offset-1">
             <h1 class="title-one-blue">All your moments.</h1>
-            <p class="margin-top-40"><b>Instant is a multi device application available on <br> desktop, tablet, mobile and the Web.</b> Thanks to our <br>cloud service, you can access to your photo at <br> anytime from anywhere.
+            <p class="margin-top-40"><b>Instant is a multi device application available<br>on desktop, tablet, mobile and the Web.</b> Thanks to our cloud service, you can access to your photo<br>at anytime from anywhere.
 </p>
           </div>
         </div>
@@ -226,8 +229,8 @@ So that you can print your instants in one click and enjoy <br>delightful moment
         <div id="the-team-row" class="row transition-story present">
 
         <div class="col-md-3 align-right align-middle">
-          <h1 class="title-one-blue">The <br> Team</h1>
-          <p>
+          <h1 class="title-one-blue" style="margin-bottom: 0px;">The <br> Team</h1>
+          <p style="margin-bottom: 20px;">
             <b>The dream team!</b><br>
             Composed by talented people <br>
              who love what they do. <br>
@@ -250,14 +253,14 @@ So that you can print your instants in one click and enjoy <br>delightful moment
           <div class="col-md-3 align-middle align-right">
             <div class="col-md-2 col-xs-2">
               <p class="team-name">
-                <a class="no-text-deco" href="https://www.linkedin.com/in/adrien-lavisiera-754a6996" target="_blank">
+                <a class="no-text-deco" href="https://twitter.com/AdrienLav" target="_blank">
                   Adrien Lavisiera <br>
                   <span class="color-blue">Developer</span>
                 </a>
               </p>
             </div>
             <div class="col-md-10 margin-bot-20">
-              <a href="https://www.linkedin.com/in/adrien-lavisiera-754a6996" target="_blank">
+              <a href="https://twitter.com/AdrienLav" target="_blank">
                 <img src="assets/img/team/adrien2.png" alt="adrien picture" width="180px" height="180px" />
               </a>
             </div>
@@ -291,14 +294,14 @@ So that you can print your instants in one click and enjoy <br>delightful moment
               </div>
               <div class="col-md-2 col-xs-2">
                 <p class="team-name">
-                  <a class="no-text-deco" href="https://www.linkedin.com/in/philippe-tring-6b981158" target="_blank">
+                  <a class="no-text-deco" href="http://philippetring.fr" target="_blank">
                   Philippe Tring <br>
                   <span class="color-blue">Developer</span>
                   </a>
                 </p>
               </div>
               <div class="col-md-10">
-                <a href="https://www.linkedin.com/in/philippe-tring-6b981158" target="_blank">
+                <a href="http://philippetring.fr" target="_blank">
                   <img src="assets/img/team/philippe2.png" alt="philippe picture" width="180px" height="180px" />
                 </a>
               </div>
@@ -310,22 +313,23 @@ So that you can print your instants in one click and enjoy <br>delightful moment
       </section>
     <section class="container full-screen slider" id="section-9" style="opacity: 0;">
         <div class="row align-middle">
-          <div class="col-md-3 col-md-offset-0 col-xs-9 col-xs-offset-1" style="margin-top: 120px; padding-left: 60px;">
-            <h1 class="title-one-blue"><b>Contact</b></h1>
-            <p>
-              Don’t hesitate to email us
-or connect on Twitter and Facebook !
-We don’t bite ;)
-<!-- We are working very hard and we iterate and improve our product again and again. We are always keen to hear your feedback and are thankful to hear about your experience with Instant. Hit us up if you need anything, we will be quick in responding and helping you out. -->
-            </p>
+          <div class="col-md-3 col-md-offset-2 col-xs-9 col-xs-offset-1" style="margin-top:160px;adding-left: 60px;">
+
+              <h1 class="title-one-blue"><b>Contact</b></h1>
+              <p>
+                Don’t hesitate to email us
+  or connect on Twitter and Facebook !
+  We don’t bite ;)
+  <!-- We are working very hard and we iterate and improve our product again and again. We are always keen to hear your feedback and are thankful to hear about your experience with Instant. Hit us up if you need anything, we will be quick in responding and helping you out. -->
+              </p>
+              <h1 id="title-thanks" class="title-one-blue"><b>Thanks</b></h1>
           </div>
-          <div class="col-md-3 col-md-offset-0 no-padding-right col-xs-9 col-xs-offset-1">
+          <div class="col-md-1 col-md-offset-0 no-padding-right col-xs-9 col-xs-offset-1">
             <a href="https://www.facebook.com/Instant-Find-anything-anytime-anywhere-1378197488873653" target="_blank">
             <div class="white-box pull-right hoverActiveClass" style="margin-top:140px;" data-img="facebook">
               <img src="assets/img/icons/facebook-grey.png" alt="facebook" style="padding-top:5px;" />
             </div>
             </a>
-            <h1 id="title-thanks" class="title-one-blue"><b>Thanks</b></h1>
           </div>
           <div class="col-md-5 col-md-offset-0 no-padding-left col-xs-9 col-xs-offset-1">
             <div class="white-box hoverActiveClass" data-img="twitter" style="margin-top:60px;">
@@ -337,10 +341,10 @@ We don’t bite ;)
               </p>
             </div>
             <p style="padding-top:40px;">
-              Véronique Ficara, Catherine Nyeki, Stéphane Pestourie, Adrien Havet, Nicolas Baberien, Antoine Visionneau, Jonathan Blanchet, Benoît Widemann, Matthieu Decarli, Tony Housiaux, Muriel Mehong, Geoffrey Dorne, Patricia Bednarski, Isabelle Dauvergne and Thierry Audoux.<br>
+              Véronique Ficara, Catherine Nyeki, Stéphane Pestourie, Adrien Havet, Nicolas Baberien, Antoine Visionneau, Jonathan Blanchet, Benoît Widemann, Matthieu Decarli, Tony Housiaux, Muriel Mehong, Geoffrey Dorne,<br> Patricia Bednarski, Isabelle Dauvergne and Thierry Audoux.<br>
               <div class="color-blue" style="margin:10px 0;"><b>&amp;</b></div>
               <span class="color-blue">a special thanks to</span><br>
-              Julien Taillez, Alexis Oney, Mafe Ariza, Eira Ennis, Marjorie Rouffet and Cheerz.
+              Julien Taillez, Alexis Oney, Mafe Ariza, Eira Ennis, Marjorie Rouffet<br> and Cheerz.
             </p>
           </div>
           <div class="col-md-6 col-xs-6" style="text-align:right;margin-top:40px;margin-bottom:20px;">
