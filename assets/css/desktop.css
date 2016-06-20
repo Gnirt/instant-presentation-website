@@ -448,3 +448,8 @@ div.active {
 #title-thanks {
   margin-top: 60px;
 }
+@media (min-width: 640px) {
+  .hide_desktop {
+      display: none !important;
+  }
+}
