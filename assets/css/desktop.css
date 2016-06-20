@@ -272,9 +272,6 @@ div.active {
   transition: transform 500ms ease-out;
   transform: translateY(200px);
 }
-#right-nav li a:hover {
-  color:white;
-}
 #right-nav li a.active {
   display: block;
   transform: translateY(0px);
@@ -288,6 +285,9 @@ div.active {
   display: block;
   color: #CDCDCD;
   transform: translateY(200px);
+}
+#right-nav li a:hover {
+  color:white !important;
 }
 .color-blue-light {
   color: #D1E2F7;
