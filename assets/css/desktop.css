@@ -437,3 +437,10 @@ div.active {
 .no-text-deco:hover {
   text-decoration: none;
 }
+.nav.navbar-nav.navbar-right {
+  margin-top: 15px;
+}
+
+#title-thanks {
+  margin-top:350px;
+}

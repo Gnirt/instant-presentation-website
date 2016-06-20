@@ -7,10 +7,11 @@
   <title>Instant App</title>
   <meta name="description" content="Find anything, anytime, anywhere.">
   <meta name="author" content="Instant Team">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
   <link rel="stylesheet" href="assets/css/desktop.css">
+  <link rel="stylesheet" href="assets/css/mobile.css">
 
 
   <!--[if lt IE 9]>
@@ -74,21 +75,14 @@
       </ul>
       <div style="margin:0 40px;">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
           <a style="padding-top:20px;" class="navbar-brand" href="#">
             <img alt="" src="assets/img/instant-logo-white.png" width="120">
           </a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right" style="margin-top:15px;">
-            <li><a id="open-popup" class="btn btn-default btn-instant" href="#" role="button">Get Started</a></li>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a id="open-popup" class="btn btn-default btn-instant hide_mobile" href="#" role="button">Get Started</a></li>
             <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
 
             <script>
@@ -108,7 +102,6 @@
               </a>
             </li>
           </ul>
-        </div><!-- /.navbar-collapse -->
       </div>
     </nav>
       <section class="container full-screen slider" id="section-1">
@@ -122,23 +115,23 @@
       </section>
       <section class="container full-screen slider" id="section-2">
         <div class="row">
-          <div class="col-md-6 align-middle align-right">
+          <div class="col-md-6 col-md-offset-0 align-middle align-right col-xs-10 col-xs-offset-1">
             <h1 class="title-one-blue">Bring your photo together,
 without noticing it!</h1>
             <p class="margin-top-40"><b>All your photo in one place without bothering you.</b><br>
 With Instant, you can save, store and collect automatically<br> your pictures from your phone, desktop and from all your<br> devices but also from your social network.</p>
           </div>
-          <div class="col-md-6 align-middle">
+          <div class="col-md-6 col-md-offset-0 align-middle col-xs-10 col-xs-offset-1">
             <img src="assets/img/collect.gif" alt="" width="500px" />
           </div>
         </div>
       </section>
       <section class="container full-screen slider" id="section-3">
         <div class="row">
-          <div class="col-md-6 align-middle align-right">
+          <div class="col-md-6 col-md-offset-0 align-middle align-right col-xs-10 col-xs-offset-1">
             <img src="assets/img/find.gif" alt="" width="500px" />
           </div>
-          <div class="col-md-6 align-middle">
+          <div class="col-md-6 col-md-offset-0 align-middle col-xs-10 col-xs-offset-1">
             <h1 class="title-one-blue">Get your photo
 back easily !</h1>
             <p class="margin-top-40"><b>Instant parse / analyse each photo to help you find a photo<br> in your archives.</b>
@@ -149,22 +142,22 @@ You are looking for a specific photo of your kitten ?<br> Just write
       </section>
       <section class="container full-screen slider" id="section-4">
         <div class="row">
-          <div class="col-md-6 align-middle align-right">
+          <div class="col-md-6 col-md-offset-0 align-middle align-right col-xs-10 col-xs-offset-1">
             <h1 class="title-one-blue">Share them instantly.</h1>
             <p class="margin-top-40"><b>Now that you can get your photo easily, you can also<br> share them simply and quickly ! </b>
 With Instant shared <br>albums function, send your best moments to your <br> friends or family through Facebook,<br> Instagram, Whatsapp, Twitter or even by email.</p>
           </div>
-          <div class="col-md-6 align-middle">
+          <div class="col-md-6 col-md-offset-0 align-middle col-xs-10 col-xs-offset-1">
             <img src="assets/img/03.gif" alt="" width="500px" />
           </div>
         </div>
       </section>
       <section class="container full-screen slider" id="section-5">
         <div class="row">
-          <div class="col-md-6 align-middle align-right">
+          <div class="col-md-6 col-md-offset-0 align-middle align-right col-xs-10 col-xs-offset-1">
             <img src="assets/img/anywhere.gif" alt="" width="500px" />
           </div>
-          <div class="col-md-6 align-middle">
+          <div class="col-md-6 col-md-offset-0 align-middle col-xs-10 col-xs-offset-1">
             <h1 class="title-one-blue">All your moments.</h1>
             <p class="margin-top-40"><b>Instant is a multi device application available on <br> desktop, tablet, mobile and the Web.</b> Thanks to our <br>cloud service, you can access to your photo at <br> anytime from anywhere.
 </p>
@@ -173,7 +166,7 @@ With Instant shared <br>albums function, send your best moments to your <br> fri
       </section>
     <section class="container full-screen slider" id="section-6">
         <div class="row">
-          <div class="col-md-6 align-middle align-right">
+          <div class="col-md-6 col-md-offset-0 align-middle align-right col-xs-10 col-xs-offset-1">
             <h1 class="title-one-blue">Bring life to your photos.</h1>
             <p class="margin-top-40"><b>We team up with <a href="https://www.cheerz.com/" target="_blank">Cheerz</a>!</b><br>
 So that you can print your instants in one click and enjoy <br>delightful moments in your hands</p>
@@ -182,7 +175,7 @@ So that you can print your instants in one click and enjoy <br>delightful moment
 </svg>
 </a>
           </div>
-          <div class="col-md-6 align-middle">
+          <div class="col-md-6 col-md-offset-0 align-middle col-xs-10 col-xs-offset-1">
             <img src="assets/img/print-it.gif" alt="" width="500px" />
           </div>
         </div>
@@ -192,7 +185,7 @@ So that you can print your instants in one click and enjoy <br>delightful moment
           <div class="col-md-12 align-middle" style="text-align:center;">
             <img id="screencast-img" class="clickable" src="assets/img/demo.png" alt="demonstration screen" width="900px" />
             <video loop id="screencast" style="display:none;">
-             <source src="assets/video/teaser.mp4" type='video/mp4'>
+             <source src="assets/video/screencast-instant.mp4" type='video/mp4'>
              <p>Your user agent does not support the HTML5 Video element.</p>
             </video>
           </div>
@@ -231,8 +224,31 @@ So that you can print your instants in one click and enjoy <br>delightful moment
           </div>
         </div>
         <div id="the-team-row" class="row transition-story present">
+
+        <div class="col-md-3 align-right align-middle">
+          <h1 class="title-one-blue">The <br> Team</h1>
+          <p>
+            <b>The dream team!</b><br>
+            Composed by talented people <br>
+             who love what they do. <br>
+            With one mission, build the best product. <br>
+          </p>
+          <div class="col-md-2 col-xs-2">
+            <p class="team-name">
+              <a class="no-text-deco" href="https://www.linkedin.com/in/wylhem-geneviève-52327a6a" target="_blank">
+              Wylhem Geneviève <br>
+              <span class="color-blue">Designer</span></a>
+              </a>
+            </p>
+          </div>
+          <div class="col-md-10">
+            <a href="https://www.linkedin.com/in/wylhem-geneviève-52327a6a" target="_blank">
+              <img src="assets/img/team/wylhem2.png" alt="wylhem picture" width="180px" height="180px" />
+            </a>
+          </div>
+        </div>
           <div class="col-md-3 align-middle align-right">
-            <div class="col-md-2">
+            <div class="col-md-2 col-xs-2">
               <p class="team-name">
                 <a class="no-text-deco" href="https://www.linkedin.com/in/adrien-lavisiera-754a6996" target="_blank">
                   Adrien Lavisiera <br>
@@ -245,22 +261,22 @@ So that you can print your instants in one click and enjoy <br>delightful moment
                 <img src="assets/img/team/adrien2.png" alt="adrien picture" width="180px" height="180px" />
               </a>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 col-xs-2">
               <p class="team-name">
-                <a class="no-text-deco" href="https://www.linkedin.com/in/clémence-taillez-6a72928b" target="_blank">
+                <a class="no-text-deco" href="https://www.behance.net/clemence_tllz" target="_blank">
                   Clémence Taillez <br>
                   <span class="color-blue">Designer</span>
                 </a>
               </p>
             </div>
             <div class="col-md-10">
-              <a href="https://www.linkedin.com/in/clémence-taillez-6a72928b" target="_blank">
+              <a href="https://www.behance.net/clemence_tllz" target="_blank">
                 <img src="assets/img/team/clemence2.png" alt="clemence picture" width="180px" height="180px" />
               </a>
             </div>
           </div>
             <div class="col-md-3 align-middle align-right">
-              <div class="col-md-2">
+              <div class="col-md-2 col-xs-2">
                 <p class="team-name">
                   <a class="no-text-deco" href="https://twitter.com/p_cedre" target="_blank">
                     Cédrine Pradier<br>
@@ -273,7 +289,7 @@ So that you can print your instants in one click and enjoy <br>delightful moment
                   <img src="assets/img/team/cedrine2.png" alt="cedrine picture" width="180px" height="180px" />
                 </a>
               </div>
-              <div class="col-md-2">
+              <div class="col-md-2 col-xs-2">
                 <p class="team-name">
                   <a class="no-text-deco" href="https://www.linkedin.com/in/philippe-tring-6b981158" target="_blank">
                   Philippe Tring <br>
@@ -287,36 +303,14 @@ So that you can print your instants in one click and enjoy <br>delightful moment
                 </a>
               </div>
             </div>
-          <div class="col-md-3 align-right align-middle">
-            <h1 class="title-one-blue">The <br> Team</h1>
-            <p>
-              <b>The dream team!</b><br>
-              Composed by talented people <br>
-               who love what they do. <br>
-              With one mission, build the best product. <br>
-            </p>
-            <div class="col-md-2">
-              <p class="team-name">
-                <a class="no-text-deco" href="https://www.linkedin.com/in/wylhem-geneviève-52327a6a" target="_blank">
-                Wylhem Geneviève <br>
-                <span class="color-blue">Designer</span></a>
-                </a>
-              </p>
-            </div>
-            <div class="col-md-10">
-              <a href="https://www.linkedin.com/in/wylhem-geneviève-52327a6a" target="_blank">
-                <img src="assets/img/team/wylhem2.png" alt="wylhem picture" width="180px" height="180px" />
-              </a>
-            </div>
-          </div>
-          <div class="col-md-3 align-middle">
+          <div class="col-md-3 align-middle hide_mobile">
             <h1 id="our-story" class="title-one-blue color-blue-light clickable">Our <br> Story</h1>
           </div>
         </div>
       </section>
     <section class="container full-screen slider" id="section-9">
         <div class="row align-middle">
-          <div class="col-md-3" style="margin-top: 120px; padding-left: 60px;">
+          <div class="col-md-3 col-md-offset-0 col-xs-10 col-xs-offset-1" style="margin-top: 120px; padding-left: 60px;">
             <h1 class="title-one-blue"><b>Contact</b></h1>
             <p>
               Don’t hesitate to email us
@@ -325,13 +319,15 @@ We don’t bite ;)
 <!-- We are working very hard and we iterate and improve our product again and again. We are always keen to hear your feedback and are thankful to hear about your experience with Instant. Hit us up if you need anything, we will be quick in responding and helping you out. -->
             </p>
           </div>
-          <div class="col-md-3 no-padding-right">
+          <div class="col-md-3 col-md-offset-0 no-padding-right col-xs-10 col-xs-offset-1">
+            <a href="https://www.facebook.com/Instant-Find-anything-anytime-anywhere-1378197488873653" target="_blank">
             <div class="white-box pull-right hoverActiveClass" style="margin-top:140px;" data-img="facebook">
               <img src="assets/img/icons/facebook-grey.png" alt="facebook" style="padding-top:5px;" />
             </div>
-            <h1 class="title-one-blue" style="margin-top:350px"><b>Thanks</b></h1>
+            </a>
+            <h1 id="title-thanks" class="title-one-blue"><b>Thanks</b></h1>
           </div>
-          <div class="col-md-5 no-padding-left">
+          <div class="col-md-5 col-md-offset-0 no-padding-left col-xs-10 col-xs-offset-1">
             <div class="white-box hoverActiveClass" data-img="twitter" style="margin-top:60px;">
               <img src="assets/img/icons/twitter-grey.png" alt="twitter" style="margin-top: 20px;" />
             </div>
@@ -347,18 +343,18 @@ We don’t bite ;)
               Julien Taillez, Alexis Oney, Mafe Ariza, Eira Ennis, Marjorie Rouffet and Cheerz.
             </p>
           </div>
-          <div class="col-md-6" style="text-align:right;margin-top:40px;margin-bottom:20px;">
+          <div class="col-md-6 col-xs-6" style="text-align:right;margin-top:40px;margin-bottom:20px;">
             <a href="http://www.gobelins.fr/" target="_blank"><img src="assets/img/icons/gobelins.png" alt="gobelins, l'ecole de l'image" /></a>
           </div>
-          <div class="col-md-6" style="text-align:left;margin-top:40px;margin-bottom:20px;">
+          <div class="col-md-6 col-xs-6" style="text-align:left;margin-top:40px;margin-bottom:20px;">
             <a href="http://www.cci-paris-idf.fr/" target="_blank"><img src="assets/img/icons/cci.png" alt="cci paris ile de france" /></a>
           </div>
-          <div class="col-md-12" style="text-align:center;">
+          <div class="col-md-12 col-xs-12" style="text-align:center;">
             &copy; Instant, 2016 All right reserved.
           </div>
         </div>
       </section>
-    <div id="next-section" class="col-md-12 clickable">
+    <div id="next-section" class="col-md-12 clickable hide_mobile">
       <img class="bounce" src="assets/img/icons/next-section.png" alt="next section" width="30px" />
     </div>
     <script src="assets/js/main.js"></script>
