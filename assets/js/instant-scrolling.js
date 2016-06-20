@@ -78,6 +78,12 @@ for(var key in scenes) {
             $("#nav-icon-menu").find("img").attr('src', "assets/img/icons/icon-menu.png");
             $("#open-popup").removeClass("btn-white");
             // $("#right-nav").show();
+            $("#"+current_id)
+            .slideDown('slow')
+            .animate(
+              { opacity: 1 },
+              { queue: false, duration: 'slow' }
+            );
           } else {
             $(".navbar-brand").find("img").attr('src', "assets/img/instant-logo-white.png");
             $("#nav-icon-menu").find("img").attr('src', "assets/img/icons/icon-menu-white.png");
