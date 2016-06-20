@@ -106,7 +106,6 @@ video#bgvid {
     height: auto;
     z-index: -100;
     position: absolute;
-    top: -40px;
     transition: 1s opacity;
 }
 #bgvid:-webkit-full-screen  {

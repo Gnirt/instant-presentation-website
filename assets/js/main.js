@@ -37,7 +37,7 @@ shuffleWords.shuffleLetters();
 setInterval(function(){
 
   // Shuffle the container with custom text
-  var textArray = ["--- Holidays photos", "--- Cats photos", "--- Paris photos", "--- Happy photos", "--- Food photos", "--- Landscape photos", "--- Sunrise photos", "--- Facebook photos"];
+  var textArray = ["- Holidays photos", "- Cats photos", "- Paris photos", "- Happy photos", "- Food photos", "- Landscape photos", "- Sunrise photos", "- Facebook photos"];
   var randomNumber = Math.floor(Math.random()*textArray.length);
   shuffleWords.shuffleLetters({
     "text": textArray[randomNumber]
